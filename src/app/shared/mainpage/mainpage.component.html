@@ -1,0 +1,15 @@
+<!-- <mat-toolbar>
+    <mat-card-title>FITPRO</mat-card-title>
+</mat-toolbar> -->
+<style>h1 {text-align: center};</style>
+<h1 style="text-align:center; font-weight: bolder; font-size: bolder;">FitPro Inc</h1>
+<mat-toolbar class="menu-bar">
+    <ul>
+        <li><a></a></li>
+        <li><a class="nav-link"  (click)="navigate('')">Homepage</a></li>
+        <li><a class="nav-link" (click)="navigate('food')">Food Products</a></li>
+        <li><a class="nav-link" (click)="navigate('diet')">Dietary plans</a></li>
+        <li><a class="nav-link" (click)="navigate('help')">Help</a></li>
+        <a (click)="logout()">Logout</a>
+    </ul>
+</mat-toolbar>

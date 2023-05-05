@@ -1,0 +1,37 @@
+<!-- <div class="hd">
+    <p style="font-weight: bolder;">Select preffered food:</p>
+    <select [(ngModel)]="selected" class="bx">
+      <option *ngFor="let x of types">{{x}}</option>
+    </select>
+    </div> -->
+    <mat-toolbar>
+
+      <select [(ngModel)]="selected" class="bx">
+    
+        <option *ngFor="let x of types">{{ x }}</option>
+    
+      </select>
+    
+    
+    
+      <label class="search">
+    
+        <input
+    
+          class="searchbox"
+    
+          type="text"
+    
+          name="Search"
+    
+          [(ngModel)]="searchtext"
+    
+          placeholder="Search Here!"
+    
+        />
+    
+        <button class="button">search</button></label>
+      <!-- <a routerLink="/dietplan" class="diets">Diets</a> -->
+    </mat-toolbar>
+
+<app-food-child *ngFor= "let x of names | filtertype : selected | filter : searchtext " [pd]="x"></app-food-child>
