@@ -12,6 +12,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { FiltertypePipe } from '../pipes/filtertype.pipe';
 import { DetailsBoxComponent } from './userhome/food-products/food-child/details-box/details-box.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { DietplanComponent } from './userhome/dietplan/dietplan.component';
+import { ContactComponent } from './userhome/contact/contact.component';
+import { DiettypeComponent } from './userhome/dietplan/diettype/diettype.component';
+import { TypedetailsComponent } from './userhome/dietplan/typedetails/typedetails.component';
+import { DietfilterPipe } from '../pipes/dietfilter.pipe';
+
 
 
 const route:Routes=[
@@ -28,6 +34,10 @@ const route:Routes=[
     {
       path:"food",
       component: FoodProductsComponent
+    },
+    {
+      path:"diet",
+      component: DietplanComponent
     }
   ]
 }
@@ -41,7 +51,12 @@ const route:Routes=[
     FoodProductsComponent,
     FoodChildComponent,
     FiltertypePipe,
-    DetailsBoxComponent
+    DetailsBoxComponent,
+    DietplanComponent,
+    ContactComponent,
+    DiettypeComponent,
+    TypedetailsComponent,
+    DietfilterPipe
 
   ],
   imports: [

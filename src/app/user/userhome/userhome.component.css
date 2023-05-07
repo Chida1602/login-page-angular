@@ -1,34 +1,39 @@
-.menu-bar{
-    background-color: lightslategray !important;
-    color: whitesmoke ! important;
+.banner{
+    background-image: url(http://localhost/back.jpg);
+    height: 500px;
+    background-position: center top;
+    background-size: cover;
+
 }
 
-.title{
-    font-size: 30px;
-    font-weight: bolder;
+.banner h1{
+    font-weight: 1000;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #1b1e35;
+    font-size: 64px;
+    line-height: 1.22;
+    padding-top: 7rem;
+    padding-left : 40px;
 }
 
-ul{
-    margin-left: 50px;
-}
-li {
-    float: left;
-    list-style-type: none;
-    margin-left: 10px;
-    margin-right: 20px;
-}
-
-a {
-    color: whitesmoke;
-    size: 20px;
-    text-decoration: none;
-    cursor: pointer;
+.banner p{
+    font-size: 22px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.73;
+    letter-spacing: normal;
+    color: #1b1e35;
+    padding-left : 50px
 }
 
-a:hover{
-    color: lightblue
-}
-
-a:active {
-    color: rgb(200, 231, 241);
+a{
+    margin-left : 50px;
+    background-color: antiquewhite;
+    padding: 15px 20px;
+    border-radius : 5px;
+    color : var(--primary-color);
+   
 }

@@ -1,6 +1,7 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
+import { TypedetailsComponent } from './user/userhome/dietplan/typedetails/typedetails.component';
 
 
 const routes: Routes = [
@@ -9,10 +10,7 @@ const routes: Routes = [
   loadChildren:() => import('./user/user.module').then(m => m.UserModule)},
   {path:"admin",loadChildren: 
   () => import('./admin/admin.module').then(m => m.AdminModule)},
-  // {path:'id',component:FoodDetailsComponent},
-  // {path:"food",component: FoodProductsComponent}
-  // // {path:"help", component: HelpComponent},
-  // // {path:"diet",component: DietPlanComponent}
+  {path:":id",component:TypedetailsComponent}
 ];
 
 @NgModule({

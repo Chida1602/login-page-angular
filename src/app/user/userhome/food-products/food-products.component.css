@@ -1,0 +1,13 @@
+.button {
+    font-size: small;
+    margin-left: 5px;
+    padding: 7px;
+  }
+  .search {
+    margin-left: 200px;
+  }
+  .searchbox {
+    padding: 7px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }

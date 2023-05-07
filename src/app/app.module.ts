@@ -10,13 +10,12 @@ import { MaterialModule } from './material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { UserModule } from './user/user.module';
 import { AdminModule } from './admin/admin.module';
-// import { FiltertypePipe } from './pipes/filtertype.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent
-    // FiltertypePipe
   ],
   imports: [
     BrowserModule,
