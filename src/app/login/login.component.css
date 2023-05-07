@@ -1,4 +1,4 @@
-#login-card{
+/* #login-card{
     height: 500px;
     width: 50%;
     margin-top: 40px;
@@ -76,4 +76,22 @@ th,td{
     text-align: center;
     left: 25%;
     color: green;
+} */
+
+
+#login-card{
+    font-family: 'poppins',sans-serif;
+    background: #ececec;
+}
+
+button{
+    margin-top : 20px;
+}
+
+.right-box{
+    padding : 40px 30px 40px 40px;
+}
+h1{
+    text-align: center;
+
 }

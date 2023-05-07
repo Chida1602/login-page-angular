@@ -1,19 +1,21 @@
 import { Component } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { DietPlanService } from 'src/app/services/diet-plan.service';
 import { FooditemsService } from 'src/app/services/fooditems.service';
 
+// export interface User{
+//   "Food": String,
+//   "Measure": String,
+//   "Grams": Number,
+//   "Calories": Number,
+//   "Protein": Number,
+//   "Fat": Number,
+//   "Sat.Fat": Number,
+//   "Fiber": Number,
+//   "Carbs": Number,
+//   "Category": String
+// }
 
-export interface User{
-  "Food": String,
-  "Measure": String,
-  "Grams": Number,
-  "Calories": Number,
-  "Protein": Number,
-  "Fat": Number,
-  "Sat.Fat": Number,
-  "Fiber": Number,
-  "Carbs": Number,
-  "Category": String
-}
 
 @Component({
   selector: 'app-home',
@@ -23,15 +25,22 @@ export interface User{
 export class HomeComponent {
   gdata:any;
   searchText:any;
-  constructor(private cs:FooditemsService){
-    this.gdata = cs.getProducts().subscribe({
-      next: (data:any) => this.gdata = data,
-      error:()=>this.gdata = []
-    })
+  constructor(private cs:FooditemsService, private dietPlanService: DietPlanService,private matSnackBar: MatSnackBar ){
+   
+    this.getProducts()
   }
 
+  removeItem(id: any){
+    this.dietPlanService.removeDietPlan(id).subscribe(res =>{
+      this.matSnackBar.open(`Item removed from the cart`,'Ok',{duration: 3000});
+      this.getProducts()
 
-  addDietPlan(){
-    
+    });}
+
+    getProducts(){
+      this.gdata = this.cs.getProducts().subscribe({
+        next: (data:any) => this.gdata = data,
+        error:()=>this.gdata = []
+      })
+    }
   }
-}

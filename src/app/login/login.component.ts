@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LogService } from '../services/log.service';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -26,7 +27,8 @@ export class LoginComponent implements OnInit  {
  // Common variables
  
    logform:boolean=true;
-  constructor(private log:LogService,private route:Router) { }
+  constructor(private log:LogService,private route:Router,
+    private userService: UserService) { }
 
   ngOnInit(): void {
   }
@@ -44,6 +46,8 @@ export class LoginComponent implements OnInit  {
      this.status=true;
      this.log.login(this.email,this.password).subscribe(
         { next:   (response:any)=>{
+          this.userService.loggedUserDetails = response.user;
+            sessionStorage.setItem("userDetails",JSON.stringify(response.user));
             sessionStorage.setItem("username",response.user.username);
             sessionStorage.setItem("usertype",response.user.type);
             sessionStorage.setItem("token",response.accessToken);
@@ -65,6 +69,7 @@ export class LoginComponent implements OnInit  {
      )
          }
  }
+
  //new User Registration 
 
  register():void{

@@ -38,6 +38,10 @@ const route:Routes=[
     {
       path:"diet",
       component: DietplanComponent
+    },
+    {
+      path:"help",
+      component:ContactComponent
     }
   ]
 }
@@ -68,6 +72,7 @@ const route:Routes=[
     MaterialModule,
     HttpClientModule,
     Ng2SearchPipeModule
-  ]
+  ],
+  // exports:[RouterModule]
 })
 export class UserModule { }

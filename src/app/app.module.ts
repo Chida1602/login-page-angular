@@ -9,13 +9,17 @@ import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { UserModule } from './user/user.module';
+import { SharedModule } from './shared/shared.module';
 import { AdminModule } from './admin/admin.module';
+//
+// import { AdminModule } from './admin/admin.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -25,6 +29,7 @@ import { AdminModule } from './admin/admin.module';
     MaterialModule,
     HttpClientModule,
     UserModule,
+    SharedModule,
     AdminModule
   ],
   providers: [],

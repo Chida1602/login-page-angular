@@ -5,7 +5,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from '../material/material.module';
-import { Ng2SearchPipe, Ng2SearchPipeModule } from 'ng2-search-filter';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { SharedModule } from '../shared/shared.module';
+import { DietPlanFormComponent } from './diet-plan-form/diet-plan-form.component';
 
 
 const route:Routes=[
@@ -13,14 +15,23 @@ const route:Routes=[
   {
   path:"home",
   component: HomeComponent,
+  },
+  {
+    path:"add-diet-plan",
+    component: DietPlanFormComponent,
+  },
+  {
+    path:"delete-diet-plan",
+    component: DietPlanFormComponent,
 }]
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    DietPlanFormComponent
   ],
   imports: [
-    
+    SharedModule,
     CommonModule,
     RouterModule.forChild(route),
     FormsModule,
