@@ -8,13 +8,26 @@ import { MaterialModule } from '../material/material.module';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SharedModule } from '../shared/shared.module';
 import { DietPlanFormComponent } from './diet-plan-form/diet-plan-form.component';
+import { ForumpageComponent } from './home/forumpage/forumpage.component';
 
 
 const route:Routes=[
-
+  // {
+  //   path:"add-diet-plan",
+  //   component: DietPlanFormComponent,
+  // },
+  // {
+  //   path:"delete-diet-plan",
+  //   component: DietPlanFormComponent,
+  // },
   {
   path:"home",
   component: HomeComponent,
+  children: [
+    {
+      path: "forum",
+      component:ForumpageComponent
+    }]
   },
   {
     path:"add-diet-plan",
@@ -23,12 +36,15 @@ const route:Routes=[
   {
     path:"delete-diet-plan",
     component: DietPlanFormComponent,
-}]
+  }
+]
 
 @NgModule({
   declarations: [
     HomeComponent,
-    DietPlanFormComponent
+    DietPlanFormComponent,
+
+    ForumpageComponent
   ],
   imports: [
     SharedModule,

@@ -1,0 +1,38 @@
+.details {
+    border: 2px solid grey;
+    width: 550px;
+    height: 200px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+/* img {
+    border: 2px solid black;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px; 
+} */
+
+.flex {
+display: flex;
+border: 2px solid grey;
+width: 750px;
+height: 350px;
+padding: 20px;
+margin-left: 20px;
+margin-top: 20px;
+  }
+.para {
+    height: 500px;
+    width: 500px;
+    padding: 40px;
+}
+.img-card{
+    border: 2px solid grey;
+    width: 550px;
+    height: 200px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}

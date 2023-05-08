@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./diettype.component.css']
 })
 export class DiettypeComponent {
-  @Input() Products:any;
+  @Input() products:any;
 }

@@ -11,11 +11,11 @@ const routes: Routes = [
   loadChildren:() => import('./user/user.module').then(m => m.UserModule)},
   {path:"admin",loadChildren: 
   () => import('./admin/admin.module').then(m => m.AdminModule)},
-  {path:":id",component:TypedetailsComponent},
+  //{path:":id",component:TypedetailsComponent},
   {
     path:"add-diet-plan",
     component: DietPlanFormComponent
-  }
+  },
 ];
 
 @NgModule({

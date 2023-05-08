@@ -1,0 +1,263 @@
+/* 
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: green;
+
+    color: white;
+
+  }
+
+
+
+  .container {
+
+    max-width: 960px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+  }
+
+
+
+
+
+  .header {
+
+    background-color: green;
+
+    color: #fff;
+
+    padding: 20px;
+
+  }
+
+
+
+  .header h1 {
+
+    font-size: 24px;
+
+    margin: 0;
+
+    color: green;
+
+  }
+
+
+
+
+
+  .navbar {
+
+    background-color: #777;
+
+    padding: 10px;
+
+  }
+
+
+
+  .navbar ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+  }
+
+
+
+  .navbar li {
+
+    display: inline;
+
+    margin-right: 10px;
+
+  }
+
+
+
+  .navbar a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+  }
+
+
+
+  
+
+
+
+  .main-content {
+
+    background-color: #fff;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+  }
+
+
+
+
+
+
+  .post {
+
+    background-color: green;
+
+    border: 1px solid green;
+
+    padding: 10px;
+
+    margin-bottom: 10px;
+
+  }
+
+
+
+
+
+
+
+
+
+  .rform-group {
+
+    margin-bottom: 10px;
+
+  }
+
+
+
+  .rform-group label {
+
+    display: block;
+
+    font-weight: bold;
+
+  }
+
+
+
+  .rform input[type="text"],
+
+  .rform textarea {
+
+    width: 100%;
+
+    padding: 5px;
+
+  }
+
+
+
+  .rform button {
+
+    background-color: green;
+
+    color: #fff;
+
+    border: none;
+
+    padding: 8px 15px;
+
+    cursor: pointer;
+
+  } */
+
+
+  /* Styles for the container of existing reviews */
+.container {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styles for the header of each review */
+.header {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.header p:first-of-type {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Styles for the "Leave a Reply" heading */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the review form */
+.rform {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Styles for the form labels and inputs */
+form tr {
+  margin-bottom: 10px;
+}
+
+form th {
+  text-align: left;
+  width: 100px;
+  font-weight: bold;
+}
+
+form td {
+  padding-left: 10px;
+}
+
+form input[type="text"], form textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Styles for the form error messages */
+form div {
+  margin-top: 5px;
+  color: red;
+  font-size: 14px;
+}
+
+/* Styles for the submit button */
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Styles for the disabled submit button */
+button[type="submit"]:disabled {
+  background-color: #ddd;
+  color: #666;
+  cursor: default;
+}

@@ -1,10 +1,10 @@
 <mat-card class="example-card">
     <mat-card-header> 
-     <!-- <mat-card class="example-card"> 
-    <mat-card-header>   -->
-    <mat-card-title>{{Products.category}}</mat-card-title>  
+    <mat-card-title>{{products.category}}</mat-card-title>  
     </mat-card-header>   
-      <mat-card-content>
-        <a routerLink="/{{Products.id}}"><img mat-card-image class="image-card" src="http://localhost/{{Products.image}}" alt="Photo" ></a>
-     </mat-card-content>    
-    </mat-card>  
+        <a routerLink="/{{products.id}}"> </a> 
+        <img mat-card-image class="image-card" src="http://localhost/{{products.image}}" alt="Photo" >
+    <mat-card-actions>
+      <a routerLink="/dietbenefits/{{ products.id }}">DETAILS</a>
+</mat-card-actions>   
+</mat-card>  

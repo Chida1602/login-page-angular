@@ -20,7 +20,7 @@ export class DietPlanFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(data){
+  onSubmit(data:any){
     this.dietPlanService.addDietPlan(this.model).subscribe(res=>{
       this.matSnackBar.open("Diet Plan Added Successfully","Ok",{duration: 3000});
       this.route.navigate(['home'])

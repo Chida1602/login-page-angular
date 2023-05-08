@@ -1,7 +1,7 @@
 .details {
-    border: 2px solid grey;
-    width: 200px;
-    height: 200px;
+    border: 2px solid black;
+    width: 250px;
+    height: 300px;
     padding: 20px;
     margin-left: 20px;
     margin-top: 20px;
@@ -10,6 +10,8 @@
   img {
     border: 2px solid black;
     padding: 20px;
+    width: 300px;
+    height: 300px;
     margin-left: 20px;
     margin-top: 20px; 
   }
@@ -26,10 +28,8 @@
   
   .para {
   
-    height: 500px;
-  
-    width: 500px;
-  
+    height: 300px;
+    width: 650px;
     padding: 40px;
   
   }

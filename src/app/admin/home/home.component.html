@@ -8,11 +8,40 @@
         <div class="col-md-3">
             <button class="btn btn-success" [routerLink]="'/add-diet-plan'">Add</button>
         </div> 
-        
     </div>
 </div> 
 
-<div class="container">
+<div class="containe">
+    <div class="table-row header-row">
+      <div class="table-cell">FOOD</div>
+      <div class="table-cell">CATEGORY</div>
+      <div class="table-cell">MEASURE</div>
+      <div class="table-cell">GRAMS</div>
+      <div class="table-cell">CALORIES</div>
+      <div class="table-cell">PROTEIN</div>
+      <div class="table-cell">FAT</div>
+      <div class="table-cell">FIBER</div>
+      <div class="table-cell">ACTION</div>
+    </div>
+    <div class="table-body">
+      <div *ngFor="let data of gdata | filter: searchText" class="table-row">
+        <div class="table-cell">{{data.Food}}</div>
+        <div class="table-cell">{{data.Category}}</div>
+        <div class="table-cell">{{data.Measure}}</div>
+        <div class="table-cell">{{data.Grams}}</div>
+        <div class="table-cell">{{data.Calories}}</div>
+        <div class="table-cell">{{data.Protein}}</div>
+        <div class="table-cell">{{data.Fat}}</div>
+        <div class="table-cell">{{data.Fiber}}</div>
+        <div class="table-cell">
+          <button (click)="removeItem(data.id)" class="btn btn-danger"><i class="material-icons">delete</i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- <div class="containe">
     <table class = 'table table-trapped'>
         <thead>
             <tr>
@@ -41,50 +70,5 @@
             </tr>
         </tbody>
     </table>
-</div>
-
-
-<!-- <app-mainpage></app-mainpage> 
-<router-outlet></router-outlet>  -->
-
-<!-- <div class="container">
-    <div class="row">
-        <mat-toolbar>
-        <div class="search-food col-md-2">
-            <input type = 'text' name="search" [(ngModel)]="searchText" placeholder="Search by food items">
-        </div> 
-        </mat-toolbar> 
-        <div class="col-md-3">
-            <button class="btn btn-success" (click)="addDietPlan()">Add</button>
-        </div>
-    </div>
-</div> 
-
-<div class="container">
-    <table class = 'table table-trapped'>
-        <thead>
-            <tr>
-                <th>FOOD</th>
-                <th>CATEGORY</th>
-                <th>MEASURE</th>
-                <th>GRAMS</th>
-                <th>CALORIES</th>
-                <th>PROTEIN</th>
-                <th>FAT</th>
-                <th>FIBER</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor = "let data of gdata | filter : searchText ">
-                <td>{{data.Food}}</td>
-                <td>{{data.Category}}</td>
-                <td>{{data.Measure}}</td>
-                <td>{{data.Grams}}</td>
-                <td>{{data.Calories}}</td>
-                <td>{{data.Protein}}</td>
-                <td>{{data.Fat}}</td>
-                <td>{{data.Fiber}}</td>
-            </tr>
-        </tbody>
-    </table>
 </div> -->
+

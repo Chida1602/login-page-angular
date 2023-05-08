@@ -26,7 +26,6 @@ export class DetailsBoxComponent {
   readdata() {
     this.ns.getDetails(this.id).subscribe({
       next: (data: any) => (this.details = data),
-
       error: () => (this.details = {}),
     });
   }

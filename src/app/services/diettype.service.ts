@@ -13,7 +13,7 @@ export class DiettypeService {
 
   } 
   getDetails(id:any): Observable<any> {
-    return this.http.get("http://localhost:4500/diets/"+id);
+    return this.http.get("http://localhost:4500/diets/" +id);
  }
 
 }

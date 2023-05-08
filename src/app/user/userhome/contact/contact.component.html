@@ -12,7 +12,24 @@
                 <input matInput [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
             </mat-form-field>
             <br>
-            <!-- <mat-form-field class="example-full-width" appearance="fill">
+            <mat-form-field appearance="fill">
+                <mat-label>Product Name</mat-label>
+                <textarea matInput [(ngModel)]="message" [ngModelOptions]="{standalone: true}"></textarea>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Message</mat-label>
+                <textarea matInput [(ngModel)]="message" [ngModelOptions]="{standalone: true}"></textarea>
+            </mat-form-field>
+            <br>
+            <mat-card-actions>
+                <button type="submit" class="b">Submit Enquiry</button>
+            </mat-card-actions>
+        </form>        
+    </div>
+</div>
+
+
+<!-- <mat-form-field class="example-full-width" appearance="fill">
               <mat-label>Product</mat-label>
               <input matInput
                      aria-label="product"
@@ -26,15 +43,3 @@
                 </mat-option>
               </mat-autocomplete>
             </mat-form-field> -->
-            <br>
-            <mat-form-field appearance="fill">
-                <mat-label>Message</mat-label>
-                <textarea matInput [(ngModel)]="message" [ngModelOptions]="{standalone: true}"></textarea>
-            </mat-form-field>
-            <br>
-            <mat-card-actions>
-                <button type="submit" class="b">Submit Enquiry</button>
-            </mat-card-actions>
-        </form>        
-    </div>
-</div>

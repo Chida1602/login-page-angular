@@ -17,12 +17,14 @@ import { ContactComponent } from './userhome/contact/contact.component';
 import { DiettypeComponent } from './userhome/dietplan/diettype/diettype.component';
 import { TypedetailsComponent } from './userhome/dietplan/typedetails/typedetails.component';
 import { DietfilterPipe } from '../pipes/dietfilter.pipe';
+import { DietbenefitsComponent } from './userhome/dietplan/diettype/dietbenefits/dietbenefits.component';
+import { ForumComponent } from './userhome/forum/forum.component';
 
 
 
 const route:Routes=[
   {path: "detailsbox/:id",component: DetailsBoxComponent},
-
+  {path: "dietbenefits/:id",component: DietbenefitsComponent},
   {
   path:"home",
   component: HomeComponent,
@@ -42,6 +44,10 @@ const route:Routes=[
     {
       path:"help",
       component:ContactComponent
+    },
+    {
+      path:"forum",
+      component:ForumComponent
     }
   ]
 }
@@ -60,7 +66,9 @@ const route:Routes=[
     ContactComponent,
     DiettypeComponent,
     TypedetailsComponent,
-    DietfilterPipe
+    DietfilterPipe,
+    DietbenefitsComponent,
+    ForumComponent
 
   ],
   imports: [

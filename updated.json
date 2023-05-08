@@ -1372,20 +1372,6 @@
       "id": 92
     },
     {
-      "Food": "table blends sugar",
-      "Measure": "2 T.",
-      "Grams": 40,
-      "Calories": 110,
-      "Protein": 0,
-      "Fat": 0,
-      "Sat.Fat": 0,
-      "Fiber": 0,
-      "Carbs": 29,
-      "Category": "Jams, Jellies",
-      "image": "jel.jpg",
-      "id": 93
-    },
-    {
       "Food": "Almonds",
       "Measure": "1/2 cup",
       "Grams": 70,
@@ -1675,6 +1661,32 @@
       "fname": "sandy",
       "email": "sandeep@gmail.com",
       "message": "wqtysxghzjNkmnkscjk"
+    },
+    {
+      "id": 88026,
+      "fname": "murari",
+      "email": "murari@gmail.com",
+      "message": "very good"
+    },
+    {
+      "id": 91806,
+      "fname": "murari",
+      "email": "murari@gmail.com",
+      "message": "all seeds and nuts are good \n"
+    }
+  ],
+  "forum": [
+    {
+      "id": 7972,
+      "name": "chida",
+      "email": "chida@gmail.com",
+      "message": "dairy products are good"
+    },
+    {
+      "id": 2451,
+      "name": "murari",
+      "email": "murari@gmail.com",
+      "message": "seeds and nuts are fresh and good"
     }
   ]
 }

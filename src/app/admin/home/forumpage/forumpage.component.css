@@ -1,0 +1,83 @@
+/* Overall Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: green;
+    color: white;
+  }
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+/* Header Styles */
+.header {
+    background-color: green;
+    color: #fff;
+    padding: 20px;
+  }
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: green;
+  }
+
+  /* Navigation Styles */
+.navbar {
+    background-color: #777;
+    padding: 10px;
+  }
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+.navbar li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Main Content Styles */
+  .main-content {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Forum Post Styles */
+.post {
+    background-color: green;
+    border: 1px solid green;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Form Styles */
+
+.rform-group {
+    margin-bottom: 10px;
+  }
+
+.rform-group label {
+    display: block;
+    font-weight: bold;
+  }
+  .rform input[type="text"],
+  .rform textarea {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .rform button {
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+  }

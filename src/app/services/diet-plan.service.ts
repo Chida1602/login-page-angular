@@ -10,11 +10,11 @@ export class DietPlanService {
   headers = new HttpHeaders().set('Content-Type', 'application/json');
   apiUrl = "http://localhost:4500/"
 
-  addDietPlan(model: any){
+  addDietPlan(model:any){
     return this.http.post(`${this.apiUrl}nutrition`, JSON.stringify(model), { headers: this.headers });
   }
 
-  removeDietPlan<T>(id): Observable<T>{
+  removeDietPlan<T>(id: any): Observable<T>{
     return this.http.delete<T>(`${this.apiUrl}nutrition/${id}`, { headers: this.headers });
   }
 }

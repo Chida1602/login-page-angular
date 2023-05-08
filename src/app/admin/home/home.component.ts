@@ -3,19 +3,6 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { DietPlanService } from 'src/app/services/diet-plan.service';
 import { FooditemsService } from 'src/app/services/fooditems.service';
 
-// export interface User{
-//   "Food": String,
-//   "Measure": String,
-//   "Grams": Number,
-//   "Calories": Number,
-//   "Protein": Number,
-//   "Fat": Number,
-//   "Sat.Fat": Number,
-//   "Fiber": Number,
-//   "Carbs": Number,
-//   "Category": String
-// }
-
 
 @Component({
   selector: 'app-home',
