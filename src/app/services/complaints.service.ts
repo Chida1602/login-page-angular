@@ -9,6 +9,9 @@ export class ComplaintsService {
   httpOptions:any;
   constructor(private http:HttpClient){
   }
+  getcomplaint():Observable<any>{
+    return this.http.get("http://localhost:4500/complaints");
+  }
 
   postComplaint(obj:any):Observable<any>{
       this.httpOptions =  new HttpHeaders({
@@ -16,5 +19,6 @@ export class ComplaintsService {
       })
     return this.http.post("http://localhost:4500/complaints",obj,this.httpOptions);
    }
+
 
 }

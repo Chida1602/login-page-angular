@@ -10,11 +10,12 @@ import { SharedModule } from '../shared/shared.module';
 import { DietPlanFormComponent } from './diet-plan-form/diet-plan-form.component';
 import { ForumpageComponent } from './forumpage/forumpage.component';
 import { ForumpageboxComponent } from './forumpage/forumpagebox/forumpagebox.component';
+import { ComplaintsComponent } from './complaints/complaints.component';
+import { CBoxComponent } from './complaints/c-box/c-box.component';
 
 
 
 const route:Routes=[
-
   {
   path:"home",
   component: HomeComponent,
@@ -30,6 +31,10 @@ const route:Routes=[
   {
     path: "forum",
     component:ForumpageComponent
+  },
+  {
+    path: "complaint",
+    component: ComplaintsComponent
   }
 ]
 
@@ -38,7 +43,9 @@ const route:Routes=[
     HomeComponent,
     DietPlanFormComponent,
     ForumpageComponent,
-    ForumpageboxComponent
+    ForumpageboxComponent,
+    ComplaintsComponent,
+    CBoxComponent
   ],
   imports: [
     SharedModule,

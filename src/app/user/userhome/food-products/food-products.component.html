@@ -10,6 +10,5 @@
           [(ngModel)]="searchtext"
           placeholder="Search Here!"/>
         <button class="button">search</button></label>
-      <!-- <a routerLink="/dietplan" class="diets">Diets</a> -->
     </mat-toolbar>
 <app-food-child *ngFor= "let x of names | filtertype : selected | filter : searchtext " [pd]="x"></app-food-child>
