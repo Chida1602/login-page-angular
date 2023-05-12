@@ -1,15 +1,4 @@
-/* form {
-    max-width: 450px;
-    margin: 30px auto;
-    }
-    
-    
-    .margin-t10{
-      margin-top: 20px;
-    } */
-    /* Style for form container */
 
-/* Center the form on the page */
 form {
   display: flex;
   flex-direction: column;
@@ -18,14 +7,14 @@ form {
   max-width: 500px;
 }
 
-/* Style the form labels */
+
 label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-/* Style the form inputs */
+
 input {
   display: block;
   width: 100%;
@@ -34,8 +23,16 @@ input {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+ 
+option
+{display: block;
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
 
-/* Style the submit button */
 button {
   padding: 10px 20px;
   border-radius: 5px;
@@ -46,7 +43,6 @@ button {
   cursor: pointer;
 }
 
-/* Style the error messages */
 .ng-invalid.ng-touched {
   border-color: #dc3545;
 }

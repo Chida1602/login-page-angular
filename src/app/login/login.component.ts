@@ -77,7 +77,6 @@ export class LoginComponent implements OnInit  {
      this.rerror="";
      let emailregex:RegExp=/^[a-z][a-z0-9_\.]+@[a-z]{2,5}\.[a-z]{3,5}$/
 
-
      if(this.rusername.length==0 || this.rpassword.length==0 || this.vpassword.length==0 )
      this.rerror="Fill all the fields";
 
@@ -93,7 +92,6 @@ export class LoginComponent implements OnInit  {
      else if(!emailregex.test(this.remail))
      this.rerror="not in email format"
 
-    
      else{
          this.rstatus=true;
        
@@ -114,9 +112,6 @@ export class LoginComponent implements OnInit  {
                          this.rstatus=false;
                      }}
                   )
-              }
-          
+              }    
      }
- 
-
 }

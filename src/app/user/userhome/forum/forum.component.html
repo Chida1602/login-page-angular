@@ -1,4 +1,4 @@
-<div class="container" *ngFor="let x of reviews">
+<!-- <div class="container" *ngFor="let x of reviews">
     <div class="header">  
      <p>{{x.name | uppercase}} said !!!</p>
     <p>"{{x.message}}"</p>
@@ -12,7 +12,7 @@
 <td><input type="text" formControlName="name"></td>
 <td>
 <div *ngIf='reviewForm.controls.name.hasError("required")'>
-    Should be filled</div>
+*</div>
 <div *ngIf='reviewForm.controls.name.hasError("minlength")'>
     Atleast Three Characters long</div>
 </td>
@@ -22,7 +22,7 @@
 <td><input type="text" formControlName="email"></td>
 <td>
 <div *ngIf='reviewForm.controls.email.hasError("required")'>
-Should be filled</div>
+*</div>
 <div *ngIf='reviewForm.controls.email.hasError("pattern")'>
     Should be in email format</div>
 </td>
@@ -33,7 +33,7 @@ Should be filled</div>
 </textarea></td>
 <td>
 <div *ngIf='reviewForm.controls.message.hasError("required")'>
-Should be filled</div>
+*</div>
 <div *ngIf='reviewForm.controls.message.hasError("minlength")'>
     Atleast 15 characters long</div>
 </td>
@@ -44,4 +44,20 @@ Post Review</button>
 </td></tr>
  </form>
  </div>
+ -->
 
+ <h1>Join the Forum!!</h1>
+
+<div class="fb">
+  <textarea
+    name="fb"
+    cols="30"
+    rows="10"
+    [(ngModel)]="com"
+    [ngModelOptions]="{ standalone: true }"></textarea>
+  <button (click)="onPost()">Post!!</button>
+</div>
+
+<div class="fc">
+  <app-forumbox *ngFor="let x of forums" [pd]="x"></app-forumbox>
+</div>

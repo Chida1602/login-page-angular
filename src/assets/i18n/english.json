@@ -1,0 +1,12 @@
+{
+    "mainpage": {
+        "Homepage" : "Home",
+        "Dietary Plans": "About us",
+        "Food Products":"Testimonials",
+        "Help": "Reach us",
+        "Forum":"Forum",
+        "Logout":"Logout",
+        "Light/Darktheme":"Light/Darktheme"
+    }
+    
+}

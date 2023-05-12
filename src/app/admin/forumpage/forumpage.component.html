@@ -1,0 +1,30 @@
+<p>forumpage works!</p>
+<!-- <p>sforum works!</p> -->
+
+<h1>Forum!!</h1>
+
+<div class="fb">
+  <textarea
+    name="fb"
+    cols="30"
+    rows="10"
+    [(ngModel)]="com"
+    [ngModelOptions]="{ standalone: true }"
+  ></textarea>
+
+  <button (click)="onPost()">Post!!</button>
+</div>
+
+<!-- <mat-card>
+
+    <mat-card-content *ngFor="let x of forums">{{x.comment}}</mat-card-content>
+
+</mat-card> -->
+
+<div class="fc">
+  <app-forumpagebox *ngFor="let x of forums" [pd]="x"></app-forumpagebox>
+</div>
+
+<!-- <p *ngFor="let x of forums">
+
+    {{x.comment}}</p> -->

@@ -6,21 +6,23 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DiscussionService {
-  httpOptions:any;
+  httpOptions: any;
 
-constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
 
+        Authorization: 'Bearer ' + sessionStorage.getItem('token'),
+      }),
+    };
+  }
 
+  getForum(): Observable<any> {
+    return this.http.get('http://localhost:4500/forum', this.httpOptions);
+  }
 
-
-getReviews():Observable<any> {
-return this.http.get("http://localhost:4500/forum")
-}
-postReview(obj:any):Observable<any>{
-this.httpOptions = new HttpHeaders({
-'Content-Type': 'application/json',
-'Authorization': "Bearer"+localStorage.getItem("token")
-})
-return this.http.post("http://localhost:4500/forum",obj,this.httpOptions);
-}
+  postForum(obj: any): Observable<any> {
+    return this.http.post('http://localhost:4500/forum', obj, this.httpOptions);
+  }
 }

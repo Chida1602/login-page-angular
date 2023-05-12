@@ -31,10 +31,6 @@
       <input type="text" name="Fat" class="form-control" [(ngModel)]="model.Fat" #Fat="ngModel" required>
     </div>
   
-    <div class="form-group margin-t10">
-      <label>Fat</label>
-      <input type="text" name="Fat" class="form-control" [(ngModel)]="model.Fat" #Fat="ngModel" required>
-    </div>
   
     <div class="form-group margin-t10">
       <label>Sat_Fat</label>
@@ -53,8 +49,19 @@
   
     <div class="form-group margin-t10">
       <label> Category</label>
-      <input type="text" name="Category" class="form-control" [(ngModel)]="model.Category" #Category="ngModel" required >
+      <!-- <input type="text" name="Category" class="form-control" [(ngModel)]="model.Category" #Category="ngModel" required >
     </div>
+    <div class="form-group margin-t10"> -->
+      <select [(ngModel)]="model.Category" #Category="ngModel" required>
+      <option *ngFor="let x of categories">{{x}}</option>
+      </select>
+      <!-- <input type="text" name="Category" class="form-control" [(ngModel)]="model.Category" #Category="ngModel" required > -->
+    </div>
+    <div class="form-group margin-t10">
+      <label> image</label>
+      <input type="text" name="Category" class="form-control" [(ngModel)]="model.image" #Category="ngModel" required >
+    </div>
+
   
     <div class="form-group margin-t10">
         <button class="btn btn-danger btn-block" [disabled]="!userForm.form.valid">Submit</button>

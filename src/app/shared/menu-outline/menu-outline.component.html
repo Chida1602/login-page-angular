@@ -1,1 +1,11 @@
-<p>menu-outline works!</p>
+<style>h1 {text-align: center};</style>
+<h1 style="text-align:center; font-weight: bolder; font-size: bolder;">FitPro Inc</h1>
+<mat-toolbar class="menu-bar">
+    <ul>
+        <li><a></a></li>
+        <li><a class="nav-link"  (click)="navigate('')">Homepage</a></li>
+        <li><a (click)="navigate('../forum')">Forum</a></li>
+        <li><a (click)="logout()">Logout</a></li>
+        <li><button (click)="toggleDarkTheme()">L/D theme</button></li>
+    </ul>
+</mat-toolbar>

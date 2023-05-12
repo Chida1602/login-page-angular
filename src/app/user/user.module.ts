@@ -19,6 +19,8 @@ import { TypedetailsComponent } from './userhome/dietplan/typedetails/typedetail
 import { DietfilterPipe } from '../pipes/dietfilter.pipe';
 import { DietbenefitsComponent } from './userhome/dietplan/diettype/dietbenefits/dietbenefits.component';
 import { ForumComponent } from './userhome/forum/forum.component';
+import { OwndietComponent } from './userhome/owndiet/owndiet.component';
+import { ForumboxComponent } from './userhome/forum/forumbox/forumbox.component';
 
 
 
@@ -48,7 +50,12 @@ const route:Routes=[
     {
       path:"forum",
       component:ForumComponent
+    },
+    {
+      path:"own",
+      component:OwndietComponent
     }
+
   ]
 }
 
@@ -68,7 +75,9 @@ const route:Routes=[
     TypedetailsComponent,
     DietfilterPipe,
     DietbenefitsComponent,
-    ForumComponent
+    ForumComponent,
+    OwndietComponent,
+    ForumboxComponent
 
   ],
   imports: [

@@ -1,19 +1,16 @@
-
 import { Component } from '@angular/core';
 import { DiscussionService } from 'src/app/services/discussion.service';
 
-
 @Component({
-  selector: 'app-forum',
-  templateUrl: './forum.component.html',
-  styleUrls: ['./forum.component.css']
+  selector: 'app-forumpage',
+  templateUrl: './forumpage.component.html',
+  styleUrls: ['./forumpage.component.css']
 })
-export class ForumComponent {
+export class ForumpageComponent {
   forums: any;
-
   com: any;
 
-  constructor(private fs:DiscussionService) {
+  constructor(private fs: DiscussionService) {
     fs.getForum().subscribe({
       next: (data: any) => (this.forums = data),
 

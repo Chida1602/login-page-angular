@@ -1,0 +1,30 @@
+<p>forumpagebox works!</p>
+
+
+<div class="padd">
+    <div class="example-card">
+      <!-- <mat-card-header> -->
+      {{ pd.username }}
+  
+      {{ pd.type }}
+      <!-- </mat-card-header> -->
+  
+      <!-- <mat-card-content> -->
+      <p>{{ pd.comment }}</p>
+      <!-- </mat-card-content> -->
+      <button mat-raised-button color="warn" (click)="replay()">Replay</button>
+      <div class="rpl" *ngIf="isReplay">
+        <textarea
+          name="replay"
+          [(ngModel)]="replayText"
+          id=""
+          cols="30"
+          rows="5"
+        ></textarea>
+        <button mat-raised-button color="warn" (click)="submitReplay()">
+          Submit
+        </button>
+      </div>
+    </div>
+    <br />
+  </div>

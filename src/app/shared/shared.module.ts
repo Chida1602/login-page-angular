@@ -8,15 +8,19 @@ import { MaterialModule } from '../material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+// import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+// import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+// export function HttpLoaderFactory(http: HttpClient) {
+//   return new TranslateHttpLoader(http,'./assets/i18n/', '.json');
+// }
 
 
 
 @NgModule({
   declarations: [
-    DirectivesComponent,
+ 
     MenuOutlineComponent,
-    ServicesComponent,
     MainpageComponent
   ],
   imports: [
@@ -25,9 +29,21 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+  //   TranslateModule.forRoot({
+  //     loader: {
+  //         provide: TranslateLoader,
+  //         useFactory: HttpLoaderFactory,
+  //         deps: [HttpClient]
+  //     }
+  // })
+    
+
   ],
 
-  exports:[MainpageComponent]
+  exports:[
+    MainpageComponent,
+    MenuOutlineComponent
+  ]
 })
 export class SharedModule { }

@@ -1,7 +1,7 @@
 import {  NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
-import { TypedetailsComponent } from './user/userhome/dietplan/typedetails/typedetails.component';
+// import { TypedetailsComponent } from './user/userhome/dietplan/typedetails/typedetails.component';
 import { DietPlanFormComponent } from './admin/diet-plan-form/diet-plan-form.component';
 
 
@@ -15,7 +15,7 @@ const routes: Routes = [
   {
     path:"add-diet-plan",
     component: DietPlanFormComponent
-  },
+  }
 ];
 
 @NgModule({

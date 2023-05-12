@@ -644,20 +644,6 @@
       "id": 40
     },
     {
-      "Food": "Iceberg",
-      "Measure": "1/4 head",
-      "Grams": 100,
-      "Calories": 13,
-      "Protein": "t",
-      "Fat": "t",
-      "Sat.Fat": 0,
-      "Fiber": 0.5,
-      "Carbs": 3,
-      "Category": "Vegetables F-P",
-      "image": "veg.jpg",
-      "id": 41
-    },
-    {
       "Food": "Fresh, steamed peas",
       "Measure": "1 cup",
       "Grams": 100,
@@ -1260,20 +1246,6 @@
       "id": 84
     },
     {
-      "Food": "Gingerbread",
-      "Measure": "1 slice",
-      "Grams": 55,
-      "Calories": 180,
-      "Protein": 2,
-      "Fat": 7,
-      "Sat.Fat": 6,
-      "Fiber": "t",
-      "Carbs": 28,
-      "Category": "Desserts, sweets",
-      "image": "sweet.jpg",
-      "id": 85
-    },
-    {
       "Food": "preserves",
       "Measure": "1 T.",
       "Grams": 20,
@@ -1330,7 +1302,7 @@
       "id": 89
     },
     {
-      "Food": "9\" diam. pie",
+      "Food": "diam. pie",
       "Measure": "1 slice",
       "Grams": 135,
       "Calories": 330,
@@ -1566,6 +1538,33 @@
       "Category": "Drinks,Alcohol, Beverages",
       "image": "drink.jpg",
       "id": 107
+    },
+    {
+      "Food": "milky-bar",
+      "Measure": "1",
+      "Grams": "100",
+      "Calories": "112",
+      "Fat": "121",
+      "Sat_Fat": "12",
+      "Fiber": "11",
+      "Carbs": "11",
+      "Category": "Dairy products",
+      "image": "paneer.jpg",
+      "Protein": "12",
+      "id": 109
+    },
+    {
+      "Food": "milky-bar",
+      "Measure": "1/2 cup",
+      "Grams": "100",
+      "Calories": "112",
+      "Protein": "12",
+      "Fat": "12",
+      "Sat_Fat": "1",
+      "Fiber": "11",
+      "Carbs": "11",
+      "image": "dairy.jpg",
+      "id": 110
     }
   ],
   "diets": [
@@ -1573,73 +1572,157 @@
       "id": 1,
       "category": "Ketogenic diet",
       "benefits": "Reduced dependence on medication.Improvements in insulin sensitivity Lower blood pressure.Usually improvements in cholesterol levels",
-      "image": "keto.jpg"
+      "image": "keto.jpg",
+      "breakfast": "Scrambled eggs cooked in coconut oil with avocado and spinach,Bulletproof coffee made with coffee, MCT oil, and grass-fed butter",
+      "Snacks": "Handful of mixed nuts (e.g. almonds, pecans, walnuts)",
+      "Lunch": "Grilled chicken breast with mixed greens, cherry tomatoes, and sliced almonds, dressed with olive oil and balsamic vinegar",
+      "Snac": "Sliced cucumber and celery sticks with guacamole",
+      "dinner": "Grilled salmon with roasted broccoli and cauliflower, drizzled with olive oil and lemon juice ,Side salad with mixed greens, cucumber, and feta cheese, dressed with olive oil and apple cider vinegar",
+      "calorie": "between 1500 and 2000 calories per day",
+      "percent": "keto diet is typically around 70-75% of calories from fat, 20-25% of calories from protein, and 5-10% of calories from carbohydrates."
     },
     {
       "id": 2,
       "category": "Mediterranean diet",
       "benefits": "Reduces Obesity and Type 2 Diabetes .Lowers Risk of Stroke and Coronary Heart Disease in Women .Improves Gut Health. Lowers Risk of Dementia and Cognitive Decline .May Reduce the Risk of Common Cancers Reduces High Blood Pressure.",
-      "image": "medit.jpg"
+      "image": "medit.jpg",
+      "breakfast": "Greek yogurt with honey and mixed berries , Whole grain toast with avocado and sliced tomatoes ,Coffee or tea",
+      "Snacks": "Handful of mixed nuts,Handful of mixed nuts",
+      "Lunch": "Greek salad with mixed greens, cucumbers, tomatoes, red onion, feta cheese, and olives, dressed with olive oil and red wine vinegar.Grilled chicken breast or salmon fillet .Whole grain pita bread.Water or herbal tea",
+      "Snac": "Hummus with raw veggies, such as carrots, bell peppers, and celery",
+      "dinner": "Grilled vegetables, such as zucchini, eggplant, and bell pepper.Quinoa or brown rice.Grilled shrimp or chicken kabobs.Glass of red wine (optional)",
+      "calorie": "between 1500 and 2000 calories per day",
+      "percent": "Mediterranean diet is typically around 40% of calories from carbohydrates, 30% of calories from fat, and 30% of calories from protein."
     },
     {
       "id": 3,
       "category": "South Beach Diet",
       "benefits": "The South Beach Plan Is Simple.Low in Saturated Fats.Encourages Individuals To Experiment.Its A Healthy Diet.It Recommends Eating Heart-Healthy Unsaturated Fats.Promotes Consuming Complex Carbohydrates.Discourages Eating Junk Food.It Makes Food Cravings Cease.",
-      "image": "south.jpg"
+      "image": "south.jpg",
+      "breakfast": "Spinach and Feta Frittata .Turkey Sausage . 1/2 cup fresh berries",
+      "Snacks": "1 small apple 2 tablespoons almond butter",
+      "Lunch": "Grilled Chicken Salad . Mixed greens, tomatoes, cucumbers, and red onion.2 tablespoons balsamic vinaigrette dressing.1 hard-boiled egg",
+      "Snac": "1/2 cup raw veggies (carrots, celery, bell pepper, etc.). 1/4 cup hummus",
+      "dinner": "Grilled salmon. Roasted Asparagus 1/2 cup brown rice",
+      "calorie": "About 1,200 to 1,400 calories per day for women and 1,500 to 1,800 calories per day for men",
+      "percent": "Calorie intake: About 1,200 to 1,400 calories per day for women and 1,500 to 1,800 calories per day for men"
     },
     {
       "id": 4,
       "category": "Gluten-free diet",
       "benefits": "Elevated Energy Levels.Helps Maintain a Healthy Weight.Eliminates Bloating.Helps Ease Joint Pain.Eliminates Unhealthy and Processed Foods From Your Diet.Up Your Daily Intake of Fruits and Veggies.Going Gluten Free Can Improve Bone Health.Boost Creativity in the Kitchen.",
-      "image": "gluten.jpg"
+      "image": "gluten.jpg",
+      "breakfast": "Gluten-free oatmeal with fresh berries and almonds .Scrambled eggs with spinach and gluten-free toas",
+      "Snacks": "Apple slices with almond butter",
+      "Lunch": "Grilled salmon with roasted asparagus and brown rice. Gluten-free pasta with tomato sauce and grilled chicken",
+      "Snac": "Gluten-free crackers with hummus .Carrot sticks with ranch dip.",
+      "dinner": "Gluten-free pasta with tomato sauce and grilled chicken. Grilled steak with roasted sweet potatoes and mixed vegetables",
+      "calorie": " ranging from 1,200 to 2,400 calories per day",
+      "percent": "Carbohydrates: 45% to 65% of daily calories, with a focus on gluten-free grains such as rice, quinoa, and corn, as well as fruits and vegetables,Protein: 10% to 35% of daily calories, with a focus on lean protein sources such as poultry, fish, tofu, and beans,Fat: 20% to 35% of daily calories, with a focus on healthy sources such as nuts, seeds, avocado, and olive oil"
     },
     {
       "id": 5,
       "category": "Mayo Clinic Diet",
       "benefits": " Mayo Clinic Diet — can reduce your risk of weight-related health problems, such as diabetes, heart disease, high blood pressure and sleep apnea.",
-      "image": "mayo.jpg"
+      "image": "mayo.jpg",
+      "breakfast": "Whole-grain breakfast cereal (1½ cups).Skim milk (1½ cups).Medium orange.Calorie-free beverage",
+      "Snacks": "8 whole peanuts",
+      "Lunch": "Grilled chicken salad with grilled chicken breast (4 ounces) mixed greens, tomatoes, bell peppers and green onions with extra-virgin olive oil and red wine vinegar.",
+      "Snac": "Unlimited servings of vegetables and fruits",
+      "dinner": "Grilled tuna (4½ ounces) or other fish sprinkled with lemon juice and basil.Brown rice (1 cup).Steamed summer squash and zucchini (1 cup).Trans fat-free margarine-like spread (1 teaspoon).Grapes (1 cup).Calorie-free beverage",
+      "calorie": "between 1200 and 1800 calories per day",
+      "percent": "Carbohydrates 45% to 65% of daily calories Protein 10% to 35% of daily calories .Fat: 20% to 35% of daily calories"
     },
     {
       "id": 6,
       "category": "Low-fat diet",
       "benefits": "Assist with weight loss due to fewer total calories consumed. Help reduce the risk of obesity and heart disease. Help lower cholesterol levels.",
-      "image": "low.jpg"
+      "image": "low.jpg",
+      "breakfast": "Veg Pie (2) + Tomato Chutney (1/3 cup) + Fresh lime water (1 glass)",
+      "Snacks": "Fruit Salad + Tender Coconut Water",
+      "Lunch": "Chapati (1) + Arhar Daal (1 cup) + 1/4th Fresh Lime + Raita (1/2 cup) + Salad (1 serve)",
+      "Snac": "Black Coffee (1 cup) + 6 Almonds + 5 Cashews + 4 Raisins",
+      "dinner": "Chapati (1) + Bottle gourd Curry (1/2 cup) + Fried Fish (1pc).",
+      "calorie": "Range from 1200 to 2000 calories per day",
+      "percent": "Carbohydrates : 50% to 60% of daily calories ,Protein: 15% to 20% of daily calories, Fat: Less than 30% of daily calories"
     },
     {
       "id": 7,
       "category": "Vegan Diet",
       "benefits": "This type of diet reduces your calorie consumption significantly, The diet is very low in fat but high in fibre, keeping you feeling fuller for longer. This diet plan helps maintain an ideal Body Mass Index.It is ethical and sustainable.",
-      "image": "vegan.jpg"
+      "image": "vegan.jpg",
+      "breakfast": "tempeh bacon with sautéed mushrooms, avocado, and wilted arugula",
+      "Snacks": " bell peppers with guacamole, fruit leather, and seaweed crisps",
+      "Lunch": "whole-grain pasta with lentil “meatballs” and a side salad",
+      "Snac": "air-popped popcorn, kale chips, and trail mix",
+      "dinner": "cauliflower and chickpea tacos with guacamole and pico de gallo",
+      "calorie": "between 1200 and 1800 calories per day",
+      "percent": "Carbohydrates: 45% to 65% of daily calories, with a focus on whole grains, fruits, and vegetables, Protein: 10% to 35% of daily calories, with a focus on plant-based sources such as beans, lentils, tofu, and tempeh ,Fat: 20% to 35% of daily calories, with a focus on healthy plant-based sources such as nuts, seeds, avocado, and olive oil"
     },
     {
       "id": 8,
       "category": "Zone diet",
       "benefits": "It helps diabetics maintain their blood sugar levels. It is known to reduce appetite and boost the weight loss process",
-      "image": "zone.jpg"
+      "image": "zone.jpg",
+      "breakfast": "hash made with bacon and vegetables, or cocoa berry butter smoothie for vegetarians",
+      "Snacks": " Blackberry shrimp salad ",
+      "Lunch": "Zone PastaRX Orzo (a low-carb orzo) with chicken and green beans or curried spinach with tofu for a vegetarian option",
+      "Snac": "asparagus artichoke salad for a vegan option",
+      "dinner": "Almond chicken with vegetables or barbecue tempeh and vegetables for those who follow a vegetarian or plant-based diet",
+      "calorie": " typically around 1,200 to 1,500 calories per day for women and 1,500 to 1,800 calories per day for men",
+      "percent": "Carbohydrates: 40% of daily calories,Protein: 30% of daily calories,Fat: 30% of daily calories"
     },
     {
       "id": 9,
       "category": "Diabetic diet",
       "benefits": "maintain general good health.better manage your blood glucose levels.achieve target blood lipid (fat) levels.maintain a healthy blood pressure.maintain a healthy body weight.prevent or slow the development of diabetes complications",
-      "image": "diab.jpg"
+      "image": "diab.jpg",
+      "breakfast": "1 cup low-fat plain Greek yogurt + ¼ cup blueberries + 3 Tbsp. chopped walnuts",
+      "Snacks": "1 large pear",
+      "Lunch": "1 serving White Bean & Veggie Salad",
+      "Snac": "22 unsalted dry-roasted almonds",
+      "dinner": "1 serving Garlic Butter-Roasted Salmon with Potatoes & Asparagus",
+      "calorie": "Ranges from 1200 to 1800 calories per day",
+      "percent": "Carbohydrates: 45% to 60% of daily calories, with a focus on complex carbohydrates such as whole grains, fruits, and vegetables, Protein: 15% to 20% of daily calories, with a focus on lean sources such as poultry, fish, beans, and tofu, Fat: 25% to 35% of daily calories, with a focus on healthy fats such as those found in nuts, seeds, avocados, and olive oil"
     },
     {
       "id": 10,
       "category": "Dukan Diet",
       "benefits": "It helps boost your metabolic rate and reduces the production of the hunger hormone, ghrelin. Together, these effects lead to weight loss.",
-      "image": "dukan.jpg"
+      "image": "dukan.jpg",
+      "breakfast": "Eggs cooked with olive oil spray",
+      "Snacks": "Oat bran pancake with fat-free cream cheese",
+      "Lunch": "prosciutto-wrapped Brussels sprouts, lean pork roasted with cauliflower",
+      "Snac": " coated in oat bran",
+      "dinner": "almon with shallots marinated in lemon and ginger.",
+      "calorie": "between 1000 and 1500 calories per day",
+      "percent": "Dukan Diet is typically around 70-75% of calories from protein, 20-25% of calories from fat, and 5-10% of calories from carbohydrates "
     },
     {
       "id": 11,
       "category": "Carnivore diet",
       "benefits": "Carnivore Diet report a range of health benefits that include weight loss, fewer digestive issues, mental clarity, higher testosterone levels, reduced inflammation, and decreased insulin resistance.",
-      "image": "carni.jpg"
+      "image": "carni.jpg",
+      "breakfast": "Scrambled eggs and bacon; ",
+      "Snacks": "Turkey sausage patties",
+      "Lunch": "hicken breasts with melted cheddar cheese; organ meat pie",
+      "Snac": "scallops sautéed in butter",
+      "dinner": "salmon filet with butter sauce",
+      "calorie": "between 1500 and 2500 calories per day",
+      "percent": "Carnivore Diet is typically around 70-80% of calories from fat, 20-25% of calories from protein, and 0-5% of calories from carbohydrates."
     },
     {
       "id": 12,
       "category": "Plant-based diet",
       "benefits": " plant-based diet improves the health of your gut so you are better able to absorb the nutrients from food that support your immune system and reduce inflammation. Fiber can lower cholesterol and stabilize blood sugar and it's great for good bowel management.",
-      "image": "plant.jpg"
+      "image": "plant.jpg",
+      "breakfast": "1 serving Berry-Kefir Smoothie",
+      "Snacks": "1 medium apple",
+      "Lunch": "1 serving Green Salad with Pita Bread & Hummus",
+      "Snac": "1/4 cup dry-roasted unsalted almonds",
+      "dinner": "1 serving Beefless Vegan Tacos 2 cups mixed greens.1 serving Citrus Vinaigrette",
+      "calorie": "ranges from 1200 to 2000 calories per day",
+      "percent": "Carbohydrates: 45% to 65% of daily calorie ,Protein: 10% to 35% of daily calories , Fat: 20% to 35% of daily calories"
     }
   ],
   "complaints": [
@@ -1673,6 +1756,11 @@
       "fname": "murari",
       "email": "murari@gmail.com",
       "message": "all seeds and nuts are good \n"
+    },
+    {
+      "id": 73781,
+      "fname": "chidanand",
+      "email": "chidanand"
     }
   ],
   "forum": [
@@ -1687,6 +1775,11 @@
       "name": "murari",
       "email": "murari@gmail.com",
       "message": "seeds and nuts are fresh and good"
+    },
+    {
+      "username": "chid",
+      "comment": "dsbxhjcbjsdabzxjbx",
+      "id": 7973
     }
   ]
 }

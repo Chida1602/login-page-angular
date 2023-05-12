@@ -12,6 +12,7 @@ import { DietPlanService } from 'src/app/services/diet-plan.service';
 export class DietPlanFormComponent implements OnInit {
 
   model: nutrition = new nutrition();
+  categories =  ['Dairy products','Fats, Oils, Shortenings', 'Meat, Poultry' ,'Fish, Seafood','Vegetables A-E','Vegetables F-P','Vegetables R-Z','Fruits A-F','Fruits G-P','Fruits R-Z','Breads, cerals, fastfood,grains','Soups','Desserts,sweets','jams, jellies','Seeds and Nuts','Drinks,Alcohol, Beverages']
 
   constructor(private dietPlanService: DietPlanService ,
     private matSnackBar: MatSnackBar,
