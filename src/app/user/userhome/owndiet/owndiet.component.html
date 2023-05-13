@@ -1,4 +1,4 @@
-<div>
+<div class="container">
     <div cdkDropListGroup>
       <div class="example-container">
         <h2>Available items</h2>
@@ -12,7 +12,8 @@
           <div class="example-box" *ngFor="let item of basket" cdkDrag>
             <div class="item-details">
               <div>{{ item.Food }}</div>
-              <div>Quantity: <input type="number" [(ngModel)]="item.quantity" min="1" placeholder="Quantity.."></div>
+              <div>
+                Quantity: <input type="number" [(ngModel)]="item.quantity" min="1" placeholder="Quantity.."></div>
             </div>
           </div>
         </div>

@@ -1,9 +1,10 @@
+<div class="container">
 <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
     <div class="form-group margin-t10">
         <label>Food</label>
         <input type="text" name="Food" class="form-control" [(ngModel)]="model.Food" #Food="ngModel" required>
     </div>
-  
+
     <div class="form-group margin-t10">
         <label>Measure</label>
         <input type="text" class="form-control" name="Measure" [(ngModel)]="model.Measure" #Measure="ngModel" required>
@@ -14,12 +15,10 @@
         <input type="text" name="Grams" class="form-control" [(ngModel)]="model.Grams" #Grams="ngModel" required>
     </div>
   
-  
     <div class="form-group margin-t10">
       <label>Calories</label>
       <input type="text" name="Calories" class="form-control" [(ngModel)]="model.Calories" #Calories="ngModel" required>
     </div>
-  
   
     <div class="form-group margin-t10">
       <label>Protein</label>
@@ -49,14 +48,11 @@
   
     <div class="form-group margin-t10">
       <label> Category</label>
-      <!-- <input type="text" name="Category" class="form-control" [(ngModel)]="model.Category" #Category="ngModel" required >
-    </div>
-    <div class="form-group margin-t10"> -->
       <select [(ngModel)]="model.Category" #Category="ngModel" required>
       <option *ngFor="let x of categories">{{x}}</option>
       </select>
-      <!-- <input type="text" name="Category" class="form-control" [(ngModel)]="model.Category" #Category="ngModel" required > -->
     </div>
+
     <div class="form-group margin-t10">
       <label> image</label>
       <input type="text" name="Category" class="form-control" [(ngModel)]="model.image" #Category="ngModel" required >
@@ -67,3 +63,4 @@
         <button class="btn btn-danger btn-block" [disabled]="!userForm.form.valid">Submit</button>
     </div>
   </form>
+</div>

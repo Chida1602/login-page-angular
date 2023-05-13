@@ -1,8 +1,11 @@
-<div class="padd">
-    <div class="example-card">
-      {{ pd.username }}
-      {{ pd.type }}
-      <p>{{ pd.comment }}</p>
-    </div>
-    <br/>
-</div>
+<br>
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{pd.usernmae}}</mat-card-title>
+      <mat-card-subtitle>{{pd.type}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{pd.comment}}</p>
+    </mat-card-content>
+</mat-card>
+<br>

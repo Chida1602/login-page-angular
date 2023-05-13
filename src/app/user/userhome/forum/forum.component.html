@@ -1,63 +1,10 @@
-<!-- <div class="container" *ngFor="let x of reviews">
-    <div class="header">  
-     <p>{{x.name | uppercase}} said !!!</p>
-    <p>"{{x.message}}"</p>
-</div>
-</div>
-<h1>Leave a Reply</h1>
-<div class="rform">
-<form [formGroup]="reviewForm" (submit)="saveReview(prod)">
-    <tr>
-<th>Name:</th>
-<td><input type="text" formControlName="name"></td>
-<td>
-<div *ngIf='reviewForm.controls.name.hasError("required")'>
-*</div>
-<div *ngIf='reviewForm.controls.name.hasError("minlength")'>
-    Atleast Three Characters long</div>
-</td>
-</tr><br>
-<tr>
-<th>Email</th>
-<td><input type="text" formControlName="email"></td>
-<td>
-<div *ngIf='reviewForm.controls.email.hasError("required")'>
-*</div>
-<div *ngIf='reviewForm.controls.email.hasError("pattern")'>
-    Should be in email format</div>
-</td>
-</tr><br>
-<tr>
-<th>Comment</th>
-<td><textarea rows=3 cols=30 formControlName="message">
-</textarea></td>
-<td>
-<div *ngIf='reviewForm.controls.message.hasError("required")'>
-*</div>
-<div *ngIf='reviewForm.controls.message.hasError("minlength")'>
-    Atleast 15 characters long</div>
-</td>
-</tr><br>
-<tr><td colspan="3" style="text-align:center">
-<button type="submit" class="form-group button" [disabled]="!reviewForm.valid">
-Post Review</button>
-</td></tr>
- </form>
- </div>
- -->
-
- <h1>Join the Forum!!</h1>
-
+<h1>Discussion page</h1>
 <div class="fb">
-  <textarea
-    name="fb"
-    cols="30"
-    rows="10"
-    [(ngModel)]="com"
-    [ngModelOptions]="{ standalone: true }"></textarea>
-  <button (click)="onPost()">Post!!</button>
+    <textarea name="fb"  cols="30" rows="10"
+    [(ngModel)]="com" [ngModelOptions]="{standalone: true}"></textarea>
+    <button
+    (click)="onPost()">Post!!</button>
 </div>
-
 <div class="fc">
-  <app-forumbox *ngFor="let x of forums" [pd]="x"></app-forumbox>
+<app-forumbox *ngFor="let x of forums" [pd]="x"></app-forumbox>
 </div>

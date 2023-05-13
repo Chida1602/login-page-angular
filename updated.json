@@ -80,6 +80,13 @@
       "username": "chidanand",
       "type": "user",
       "id": 12
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$xdXQmfZEekJ8L4lQDjI6h.k3AdeKhQEHdcZ.OYqALpaHF2JHGpmtu",
+      "username": "admin16",
+      "type": "admin",
+      "id": 13
     }
   ],
   "nutrition": [
@@ -1552,19 +1559,6 @@
       "image": "paneer.jpg",
       "Protein": "12",
       "id": 109
-    },
-    {
-      "Food": "milky-bar",
-      "Measure": "1/2 cup",
-      "Grams": "100",
-      "Calories": "112",
-      "Protein": "12",
-      "Fat": "12",
-      "Sat_Fat": "1",
-      "Fiber": "11",
-      "Carbs": "11",
-      "image": "dairy.jpg",
-      "id": 110
     }
   ],
   "diets": [
@@ -1765,21 +1759,37 @@
   ],
   "forum": [
     {
-      "id": 7972,
-      "name": "chida",
-      "email": "chida@gmail.com",
-      "message": "dairy products are good"
-    },
-    {
-      "id": 2451,
-      "name": "murari",
-      "email": "murari@gmail.com",
-      "message": "seeds and nuts are fresh and good"
-    },
-    {
       "username": "chid",
-      "comment": "dsbxhjcbjsdabzxjbx",
-      "id": 7973
+      "comment": "hello",
+      "id": 1,
+      "reply": [
+        {
+          "username": "chid",
+          "comment": "hello"
+        },
+        {
+          "usernmae": "chida1602",
+          "comment": "hai chida"
+        },
+        {
+          "usernmae": "chida1602",
+          "comment": "how was the ui experience of the website\n"
+        }
+      ]
+    },
+    {
+      "usernmae": "chida1602",
+      "id": 2
+    },
+    {
+      "usernmae": "chida1602",
+      "comment": "hi guys",
+      "id": 3
+    },
+    {
+      "usernmae": "chida1602",
+      "comment": "hello \n",
+      "id": 4
     }
   ]
 }

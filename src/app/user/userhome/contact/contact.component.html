@@ -1,6 +1,6 @@
 <div class="frm">
     <div class="ct">
-        <h1 style="background-color: rgb(187, 200, 198);">Post Your Complaint</h1>
+        <h1 style="background-color: rgb(187, 200, 198);">Post Your Complaint / Feedback</h1>
         <form class="example-form" (ngSubmit)="submit()">
             <mat-form-field appearance="fill">
                 <mat-label>Name</mat-label>
@@ -13,10 +13,6 @@
             </mat-form-field>
             <br>
             <mat-form-field appearance="fill">
-                <mat-label>Product Name</mat-label>
-                <textarea matInput [(ngModel)]="message" [ngModelOptions]="{standalone: true}"></textarea>
-            </mat-form-field>
-            <mat-form-field appearance="fill">
                 <mat-label>Message</mat-label>
                 <textarea matInput [(ngModel)]="message" [ngModelOptions]="{standalone: true}"></textarea>
             </mat-form-field>
@@ -28,18 +24,3 @@
     </div>
 </div>
 
-
-<!-- <mat-form-field class="example-full-width" appearance="fill">
-              <mat-label>Product</mat-label>
-              <input matInput
-                     aria-label="product"
-                     [(ngModel)]="product"
-                     [matAutocomplete]="auto"
-                     [formControl]="stateCtrl">
-              <mat-autocomplete #auto="matAutocomplete">
-                <mat-option *ngFor="let prod of filteredStates | async" [value]="prod.name">
-                  <img alt="" class="example-option-img" [src]="prod.flag" height="25">
-                  <span>{{prod.name}}</span> 
-                </mat-option>
-              </mat-autocomplete>
-            </mat-form-field> -->

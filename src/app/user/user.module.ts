@@ -15,12 +15,12 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { DietplanComponent } from './userhome/dietplan/dietplan.component';
 import { ContactComponent } from './userhome/contact/contact.component';
 import { DiettypeComponent } from './userhome/dietplan/diettype/diettype.component';
-import { TypedetailsComponent } from './userhome/dietplan/typedetails/typedetails.component';
 import { DietfilterPipe } from '../pipes/dietfilter.pipe';
 import { DietbenefitsComponent } from './userhome/dietplan/diettype/dietbenefits/dietbenefits.component';
 import { ForumComponent } from './userhome/forum/forum.component';
 import { OwndietComponent } from './userhome/owndiet/owndiet.component';
 import { ForumboxComponent } from './userhome/forum/forumbox/forumbox.component';
+import { CustomdDirective } from '../directives/customd.directive';
 
 
 
@@ -72,12 +72,12 @@ const route:Routes=[
     DietplanComponent,
     ContactComponent,
     DiettypeComponent,
-    TypedetailsComponent,
     DietfilterPipe,
     DietbenefitsComponent,
     ForumComponent,
     OwndietComponent,
-    ForumboxComponent
+    ForumboxComponent,
+    CustomdDirective
 
   ],
   imports: [
@@ -88,7 +88,8 @@ const route:Routes=[
     ReactiveFormsModule,
     MaterialModule,
     HttpClientModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    
   ],
   // exports:[RouterModule]
 })

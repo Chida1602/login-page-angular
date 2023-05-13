@@ -1,12 +1,11 @@
 {
     "mainpage": {
         "Homepage" : "Home",
-        "Dietary Plans": "About us",
-        "Food Products":"Testimonials",
-        "Help": "Reach us",
+        "Food Products":"Products",
+        "Dietary Plans": "Dietary Plans",
+  
         "Forum":"Forum",
-        "Logout":"Logout",
-        "Light/Darktheme":"Light/Darktheme"
+        "Create plan":"Own Diet"
     }
     
 }

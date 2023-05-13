@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+
 import { UserService } from 'src/app/services/user.service';
 
 
@@ -10,16 +12,18 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./mainpage.component.css']
 })
 export class MainpageComponent {
-  // lang:any= "english"
-  // languages:any=[
-  //   {name:"English",value:"english"},
-  //   {name:"Tamil",value:"tamil"},
-  //   {name:"Telugu",value:"telugu"},
-  //   {name:"Hindi",value:"hindi"}
+  lang:any= "english"
+  languages:any=[
+    {name:"English",value:"english"},
+    {name:"Tamil",value:"tamil"},
+    {name:"Telugu",value:"telugu"},
+    {name:"Hindi",value:"hindi"}
 
-  // ]
+  ]
 
-  constructor(private router:Router,private route:ActivatedRoute,public userService: UserService){}
+  constructor(private router:Router,private route:ActivatedRoute,public userService: UserService,private ts:TranslateService){
+    this.ts.use(this.lang)
+}
 
   navigate(url:string){
     if(url==""){
@@ -35,17 +39,10 @@ export class MainpageComponent {
   toggleDarkTheme(): void {
     document.body.classList.toggle('dark-theme');
   }
-// // constructor(private ts:TranslateService)
-// // {
-// //   this.ts.use(this.lang)
-// // }
 
-//   // constructor(private ts:TranslateService){
-      
-//   // }
 
-  // changeLang():void{
-  //    this.ts.use(this.lang)
-  // }
+  changeLang():void{
+     this.ts.use(this.lang)
+  }
 }
 

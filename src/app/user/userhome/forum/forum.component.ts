@@ -39,7 +39,6 @@ export class ForumComponent {
     this.fs.postForum(obj).subscribe({
       next: () => {
         this.ngOnInit();
-
         this.com = '';
       },
 

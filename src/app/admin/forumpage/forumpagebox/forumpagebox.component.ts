@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { DiscussionService } from 'src/app/services/discussion.service';
 
 @Component({
   selector: 'app-forumpagebox',
@@ -6,22 +7,38 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./forumpagebox.component.css']
 })
 export class ForumpageboxComponent {
-  @Input() pd: any;
+  @Input() pd:any;
+  // reply() {
+  //   // Add your reply logic here
+  //   console.log('Reply button clicked');
+  isReply=false;
+  replyText = '';
+  constructor(private us:DiscussionService){
 
-  isReplay = false;
-  replayText = '';
-  replay() {
-    if (this.isReplay == false) {
-      this.isReplay = true;
-    } else {
-      this.isReplay = false;
+  }
+  reply() {
+    if(this.isReply == false){
+      this.isReply = true;
     }
-    console.log('Replay Clicked');
+    else{
+      this.isReply = false;
+    }
+    console.log('Reply button clicked');
+  }
+  submitReply() {
+    let un = sessionStorage.getItem("username");
+    let rl = this.pd.reply;
+    let obj = {
+      "usernmae":un,
+      "comment": this.replyText
+    }
+    rl.push(obj)
+    this.us.updateForum({"reply":rl},this.pd.id).subscribe({
+      next:()=>{alert("reply successful")},
+      error:()=>{alert("reply failed")}
+    })
+    this.replyText = ""
+    this.isReply = false;
   }
 
-  submitReplay() {
-    console.log(this.replayText);
-    this.replayText = '';
-    this.isReplay = false;
-  }
 }

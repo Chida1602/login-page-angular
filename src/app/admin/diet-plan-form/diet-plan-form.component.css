@@ -1,53 +1,40 @@
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px auto;
-  max-width: 500px;
+ .container {
+  max-width: 600px;
+  margin: 0 auto;
+  border: .5px #0a0101;
 }
 
+.form-group {
+  margin-bottom: 20px;
+}
 
 label {
   display: block;
-  margin-bottom: 10px;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
-
-input {
+input[type="text"], select {
   display: block;
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
- 
-option
-{display: block;
-width: 100%;
-padding: 10px;
-margin-bottom: 20px;
-border-radius: 5px;
-border: 1px solid #ccc;
-}
 
 button {
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  background-color: #dc3545;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #35dc3d;
   color: #fff;
-  font-weight: bold;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.ng-invalid.ng-touched {
-  border-color: #dc3545;
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
-
-.ng-invalid.ng-touched + label {
-  color: #dc3545;
-}
-
